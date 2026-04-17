@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Business Consulting | Standalone Version</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Outfit', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        :root {
+            --bright-yellow: #FACC15;
+            --bright-blue: #1E3A8A;
+            --bright-black: #000000;
+        }
+
+        .bg-bright-yellow { background-color: var(--bright-yellow); }
+        .bg-bright-blue { background-color: var(--bright-blue); }
+        .bg-bright-black { background-color: var(--bright-black); }
+        .text-bright-blue { color: var(--bright-blue); }
+        .text-bright-yellow { color: var(--bright-yellow); }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-display font-bold text-xl tracking-tighter">
+                BRIGHT BUSINESS <span class="text-bright-blue">CONSULTING</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest uppercase">
+                <a href="#home" class="hover:text-bright-blue transition-colors">Home</a>
+                <a href="#about" class="hover:text-bright-blue transition-colors">About</a>
+                <a href="#services" class="hover:text-bright-blue transition-colors">Services</a>
+                <a href="#contact" class="hover:text-bright-blue transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="bg-bright-black text-white px-6 py-2 rounded-full text-xs font-bold transition-all hover:bg-bright-blue">
+                BOOK NOW
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-16 bg-bright-black overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://picsum.photos/seed/bright-consulting-hero/1920/1080" class="w-full h-full object-cover opacity-60" alt="Hero">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-5xl md:text-8xl font-display font-bold text-white leading-none mb-6">
+                BRIGHT <span class="text-bright-yellow">PEOPLE</span> <br>
+                <span class="italic font-serif font-light text-bright-blue">Build</span> <br>
+                BRIGHT <span class="text-bright-yellow">BUSINESS</span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-xl mx-auto mb-8 font-medium">
+                We partner with organizations to unlock human potential, build capable leaders, and create cultures that thrive.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="bg-bright-yellow text-black px-8 py-4 rounded-full font-bold flex items-center justify-center hover:bg-white transition-all group">
+                    EXPLORE SERVICES <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+                <a href="#contact" class="border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all">
+                    GET IN TOUCH
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-[0.4em] text-bright-blue uppercase block mb-2">OUR SOLUTIONS</span>
+                <h2 class="text-4xl md:text-6xl font-display font-bold text-black">What We Do.</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-10 rounded-[40px] shadow-sm border border-transparent hover:border-bright-yellow transition-all group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 text-bright-blue group-hover:scale-110 transition-transform">
+                        <i data-lucide="users" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Leadership Development</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Experiential leadership journeys and pathways designed to bring out the brightest potential in people.
+                    </p>
+                    <a href="#contact" class="text-xs font-bold tracking-widest text-bright-blue flex items-center group-hover:translate-x-1 transition-transform">
+                        LEARN MORE <i data-lucide="arrow-right" class="ml-1 w-3 h-3"></i>
+                    </a>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-10 rounded-[40px] shadow-sm border border-transparent hover:border-bright-yellow transition-all group">
+                    <div class="w-16 h-16 bg-yellow-50 rounded-2xl flex items-center justify-center mb-8 text-bright-blue group-hover:scale-110 transition-transform">
+                        <i data-lucide="zap" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Training & Capability</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Experiential, engaging and transformation-oriented sessions that shift perspectives and habits.
+                    </p>
+                    <a href="#contact" class="text-xs font-bold tracking-widest text-bright-blue flex items-center group-hover:translate-x-1 transition-transform">
+                        LEARN MORE <i data-lucide="arrow-right" class="ml-1 w-3 h-3"></i>
+                    </a>
+                </div>
+                <!-- Add more as needed... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bright-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="font-display font-bold text-2xl tracking-tighter mb-4">
+                BRIGHT BUSINESS <span class="text-bright-blue">CONSULTING</span>
+            </div>
+            <p class="text-gray-500 text-sm mb-8">© 2024 Bright Business Consulting. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 text-gray-400">
+                <i data-lucide="linkedin" class="w-5 h-5 cursor-pointer hover:text-white transition-colors"></i>
+                <i data-lucide="mail" class="w-5 h-5 cursor-pointer hover:text-white transition-colors"></i>
+                <i data-lucide="phone" class="w-5 h-5 cursor-pointer hover:text-white transition-colors"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
